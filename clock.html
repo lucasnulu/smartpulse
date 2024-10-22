@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Smartpulse - Relógio Inteligente para monitoramento de saúde">
+  <meta name="keywords" content="Smartpulse, Relógio Inteligente, Monitoramento de Saúde, Tecnologia Vestível">
+  <meta name="author" content="Equipe Smartpulse">
+  <title>Smartpulse | Relógio Inteligente</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    /* Estilos principais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .project-name {
+      font-size: 24px;
+      margin-left: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    .interactive-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .clickable-image {
+      width: 300px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .clickable-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* Ocultando a descrição inicialmente */
+    .description, .additional-content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+
+    /* Exibir descrição e conteúdo adicional com animação */
+    .description.show, .additional-content.show {
+      max-height: 1000px;
+      opacity: 1;
+    }
+
+    .additional-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .additional-images img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .additional-images img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .footer-contact a {
+      color: #1400cc;
+      text-decoration: none;
+    }
+
+    h2, h3 {
+      color: #0e00cc;
+    }
+
+    p {
+      color: #000000;
+      font-size: 16px;
+    }
+
+    .nav-menu a:hover {
+      color: #033f7a;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com a barra de navegação -->
+  <header>
+    <div class="logo-container">
+      <img src="stp.png" alt="Logo do Smartpulse" class="logo">
+      <h1 class="project-name">Projeto Smartpulse</h1>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="colete.html">Colete Inteligente</a></li>
+        <li><a href="app.html">App</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção do Relógio Inteligente -->
+  <main>
+    <section id="relogio" class="interactive-section">
+      <h2>Relógio Inteligente</h2>
+      <p>Clique na imagem do relógio para saber mais:</p>
+
+      <!-- Imagem interativa do Relógio -->
+      <div class="image-container">
+        <img src="clock.png" alt="Imagem do Relógio Inteligente" class="clickable-image" id="relogio-image">
+        <div class="description" id="relogio-description">
+          <h3>Detalhes do Relógio Inteligente</h3>
+          <p><stronger>O relógio SmartPulse</stronger> foi criado para ajudar no monitoramento da saúde da pessoa, oferecendo suporte em diversas áreas essenciais. Ele auxilia na qualidade do sono, incentiva a ingestão adequada de água, mede a temperatura corporal e monitora os batimentos por minuto (BPM), garantindo assim um cuidado constante e personalizado para quem o utiliza.</p>
+
+          <p>As informações coletadas pelo relógio são transmitidas automaticamente para o aplicativo, onde tudo fica registrado e acessível, proporcionando ao usuário uma visão clara e detalhada de sua saúde. Com a inteligência da tecnologia embarcada, o dispositivo realiza um acompanhamento em tempo real e, caso ocorra algo fora do comum – como um aumento súbito dos batimentos cardíacos ou variações na temperatura – o aplicativo envia imediatamente um alerta ao usuário, perguntando se está tudo bem.</p>
+          
+          <p>Se o alerta não for respondido ou a situação for crítica, o sistema contata os familiares cadastrados para que possam prestar assistência. E, caso isso também não seja suficiente, o relógio aciona automaticamente o sistema de saúde, garantindo que o usuário receba ajuda de forma rápida e eficiente.</p>
+        </div>
+
+        <!-- Conteúdo adicional que aparece após o clique -->
+        <div class="additional-content" id="additional-content">
+          <h3>Imagens adicionais do Relógio</h3>
+          <div class="additional-images">
+            <img src="fufu.png" alt="Relógio virtual. Desing feito por Malu">
+            <img src="inicio.png" alt="Imagem adicional 2">
+            <img src="bpm.png" alt="Imagem adicional 3">
+            <img src="sono.png" alt="Imagem adicional 4">
+            <img src="s.png" alt="Imagem adicional 5">
+            <img src="jojo.png" alt="Imagem adicional 6">
+            <img src="aa.png" alt="Imagem adicional 7">
+          </div>
+          <p><stronger>O relógio foi a parte mais desafiadora do projeto</stronger>, trazendo diversos problemas e dificuldades. Como o conteúdo sobre Arduino foi abordado apenas no primeiro ano, os integrantes enfrentaram o desafio de comprar componentes, aprender sobre sensores e integrar tudo de forma funcional. Com receio de que o relógio físico não fosse concluído a tempo, decidiram desenvolver também uma versão virtual como alternativa.</p>
+
+          <p>Malu criou o <stronger>relógio virtual no Figma</stronger>, apresentando um design moderno e atraente. Lucas, por sua vez, desenvolveu um simulador de BPM no Flutter, com um design simples e intuitivo para remeter à funcionalidade de um relógio.</p>
+          
+          <p><stronger>O ESP32</stronger> foi escolhido como a unidade central de processamento do relógio inteligente. Esse microcontrolador de alto desempenho, com conectividade integrada via Wi-Fi e Bluetooth, é capaz de processar dados em tempo real, executar algoritmos de IA e gerenciar a comunicação com outras plataformas. Ele é responsável por coletar dados de diversos sensores, como os de frequência cardíaca, movimento e condução da pele. Essas informações são fundamentais para monitorar sinais fisiológicos que possam indicar uma crise de ansiedade ou pânico iminente.</p>
+          
+          <p>Se uma crise for detectada, o ESP32 pode ativar <stronger>mecanismos de intervenção</stronger>, como alertar o usuário, enviar notificações aos contatos de emergência ou se integrar a aplicativos de suporte psicológico. A conectividade Bluetooth e Wi-Fi também permite que o dispositivo se conecte a smartphones e outras plataformas, garantindo um suporte mais abrangente e eficiente.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Smartpulse. Todos os direitos reservados.</p>
+    <p class="footer-contact">Entre em contato: <a href="mailto:smartpulseprojeto@gmail.com">smartpulseprojeto@gmail.com</a></p>
+  </footer>
+
+  <script>
+    // Seleciona a imagem e o conteúdo adicional
+    const relogioImage = document.getElementById('relogio-image');
+    const relogioDescription = document.getElementById('relogio-description');
+    const additionalContent = document.getElementById('additional-content');
+
+    // Função para exibir/ocultar a descrição e o conteúdo adicional ao clicar
+    relogioImage.addEventListener('click', function() {
+      relogioDescription.classList.toggle('show');
+      additionalContent.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* Estilo geral do site */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Cabeçalho com a barra de navegação */
+  header {
+    background-color: #000;
+    padding: 1em 2em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Contêiner para logo e nome do projeto */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .project-name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Barra de navegação */
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.5s ease, transform 0.4s ease; 
+  }
+
+  nav ul li a:hover {
+    color: #1E90FF; /* Muda a cor ao passar o mouse */
+    transform: scale(1.5); /* Um leve zoom ao passar o mouse */
+  }
+  
+  
+  /* Seção principal (hero section) com imagem de fundo */
+  .hero {
+    background-image: url('smart.jpeg');  /* Coloca a imagem como fundo */
+    background-size: cover;               /* Faz a imagem cobrir toda a área */
+    background-position: center;          /* Centraliza a imagem */
+    background-repeat: no-repeat;         /* Não repetir a imagem */
+    height: 100vh;                        /* Ocupa 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;                          /* Cor do texto para garantir contraste */
+  }
+  
+  
+  
+  /* Título da hero section */
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1.5s ease-out; /* Animação de entrada suave */
+  }
+  
+  /* Logo na hero section */
+  .hero-logo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1.8s ease-out;
+  }
+  
+  /* Texto adicional da hero section */
+  .hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  /* Seção de produtos com o celular e relógio */
+  .products {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+    background-color: #fff;
+  }
+  
+  .product {
+    text-align: center;
+  }
+  
+  .product img {
+    width: 525px; /* Tamanho maior das imagens */
+    height: auto;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transição suavizada */
+    cursor: pointer; 
+  }
+
+  .product img:hover {
+    transform: scale(1.08); /* Zoom suave ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efeito de zoom ao rolar a página */
+  .zoom-on-scroll {
+    transform: scale(1);
+
+  }
+  
+  .zoom-on-scroll.zoomed {
+    transform: scale(1.4);
+  }
+  
+  /* Seções das páginas referenciadas no App Bar */
+  section {
+    padding: 3em 2em;
+    background-color: #f4f4f4;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2em;
+    }
+  
+    .hero p {
+      font-size: 1.2em;
+    }
+  
+    .product img {
+      width: 300px; /* Ajuste de tamanho para dispositivos móveis */
+    }
+  
+    .products {
+      flex-direction: column; /* Empilha os produtos em telas pequenas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.8em;
+    }
+  
+    .hero p {
+      font-size: 1em;
+    }
+  }
+  
+  /* Botões */
+  button {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza transições */
+  }
+  
+  button:hover {
+    background-color: #105c9e; /* Muda a cor no hover */
+    transform: scale(1.05); /* Zoom leve ao passar o mouse */
+  }
+  

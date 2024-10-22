@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Smartpulse - Colete Inteligente para monitoramento de saúde em tempo real">
+  <meta name="keywords" content="Smartpulse, Colete Inteligente, Monitoramento de Saúde, Tecnologia Vestível">
+  <meta name="author" content="Equipe Smartpulse">
+  <title>Smartpulse | Colete Inteligente</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    /* Estilos principais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .project-name {
+      font-size: 24px;
+      margin-left: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    .interactive-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .clickable-image {
+      width: 300px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .clickable-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* Ocultando a descrição inicialmente */
+    .description {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+
+    /* Exibir descrição com animação */
+    .description.show {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #000000;
+    }
+
+    .footer-contact a {
+      color: #29008a;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com a barra de navegação -->
+  <header>
+    <div class="logo-container">
+      <img src="stp.png" alt="Logo do Smartpulse" class="logo">
+      <h1 class="project-name">Projeto Smartpulse</h1>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="app.html">App</a></li>
+        <li><a href="#colete">Colete Inteligente</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção do Colete Inteligente -->
+  <main>
+    <section id="colete" class="interactive-section">
+      <h2>Colete Inteligente</h2>
+      <p>Clique na imagem do colete para saber mais:</p>
+
+      <!-- Imagem interativa do Colete -->
+      <div class="image-container">
+        <img src="colete.jpeg" alt="Imagem do Colete Inteligente" class="clickable-image" id="colete-image">
+        <div class="description" id="colete-description">
+          <h3>Detalhes do Colete Inteligente</h3>
+          <p><stronger>O desenvolvimento do colete inteligente</stronger> foi pensado como uma solução complementar para auxiliar pessoas com mais idade ou aquelas que sofrem de crises de ansiedade e ataques cardíacos. A ideia surgiu para garantir que as informações transmitidas pelo relógio ao aplicativo sejam precisas, além de oferecer um suporte mais direto durante episódios críticos. Esse colete não seria destinado ao público em geral, mas especificamente para quem necessita de monitoramento contínuo e personalizado, ficando a critério do usuário sua utilização.</p>
+
+          <h2> Reflexão sobre o Projeto do Colete Inteligente</h2>
+          
+          <h3>1. Conceito e Propósito do Colete</h3>
+          <p>O colete foi projetado com a intenção de ser confortável e eficiente no monitoramento da saúde do usuário. Ele buscaria não apenas identificar crises, mas também atuar diretamente para mitigar sintomas físicos e proporcionar um alívio imediato. Durante o planejamento, pensamos cuidadosamente nos sensores a serem utilizados, assim como na estrutura e no revestimento do colete.</p>
+          
+          <h3>2. Sensores Planejados e Funcionalidades</h3>
+          <p>Os seguintes sensores foram escolhidos estrategicamente para garantir um funcionamento eficiente e seguro do colete:</p>
+          
+          <ul>
+            <li><stronger>Sensores de Calor:</stronger> Seriam posicionados em ambos os lados do peito para monitorar variações na temperatura corporal. Se uma queda brusca de temperatura fosse detectada, indicando um possível mal-estar ou crise, os sensores ativariam um sistema de aquecimento suave para restaurar o conforto do usuário.</li>
+          
+            <li><stronger>Sensores Vibratórios:</stronger> Esses sensores seriam integrados ao colete para proporcionar vibrações suaves que imitam uma massagem. A função seria ativada durante crises de ansiedade, ajudando a acalmar o usuário e sincronizar sua respiração, promovendo relaxamento imediato.</li>
+          
+            <li><stronger>Sensor Aero:</stronger> Esse sensor foi pensado para monitorar a respiração do usuário em tempo real, identificando padrões irregulares que indicam crise de ansiedade ou parada respiratória. Com essa informação, o sistema poderia alertar automaticamente contatos de emergência e, se necessário, acionar serviços médicos.</li>
+          </ul>
+          
+          <h3>3. Revestimento Confortável e Seguro</h3>
+          <p>Para garantir conforto durante o uso prolongado, o colete seria <stronger>revestido com algodão macio</stronger>. Isso evitaria o atrito dos sensores com a pele e impediria desconfortos que poderiam surgir ao longo do uso, como irritações ou sensações de incômodo. A escolha desse material tem como objetivo tornar o dispositivo o mais ergonômico possível, permitindo que o usuário se sinta seguro e à vontade ao utilizá-lo.</p>
+          
+          <h3>4. Aplicações e Público-Alvo</h3>
+          <p>O colete foi idealizado para atender às necessidades de:</p>
+          <ul>
+            <li><stronger>Pessoas mais velhas:</stronger> Que podem ter dificuldades em acessar aplicativos ou dispositivos eletrônicos durante crises e se beneficiariam de um suporte físico automatizado.</li>
+            <li><stronger>Indivíduos com crises de ansiedade recorrentes:</stronger> Que precisam de uma resposta imediata e eficaz para aliviar os sintomas durante os episódios.</li>
+            <li><stronger>Pessoas com histórico de ataques cardíacos:</stronger> Que necessitam de um monitoramento contínuo e alerta imediato em caso de emergência.</li>
+          </ul>
+          
+          <h3>5. Perspectivas Futuras</h3>
+          <p>Ainda que o colete não tenha sido finalizado nesta fase do projeto, ele continua sendo uma parte essencial da nossa visão para o futuro. A integração de dispositivos vestíveis como o colete ampliaria o ecossistema de suporte do aplicativo e do relógio, oferecendo uma solução completa para o monitoramento da saúde e gestão de crises, sempre com foco no conforto e na segurança do usuário.</p>
+          <ul>
+            <li>Monitoramento cardíaco 24 horas</li>
+            <li>Análise e relatórios de desempenho físico</li>
+            <li>Integração com aplicativo para controle remoto</li>
+            <li>Design leve e confortável, ideal para uso diário</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Smartpulse. Todos os direitos reservados.</p>
+    <p class="footer-contact">Entre em contato: <a href="mailto:smartpulseprojeto@gmail.com">smartpulseprojeto@gmail.com</a></p>
+  </footer>
+
+  <script>
+    // Seleciona a imagem e a descrição
+    const coleteImage = document.getElementById('colete-image');
+    const coleteDescription = document.getElementById('colete-description');
+
+    // Função para exibir/ocultar a descrição ao clicar
+    coleteImage.addEventListener('click', function() {
+      coleteDescription.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
